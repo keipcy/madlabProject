@@ -1,0 +1,37 @@
+body {
+    background-color: lemonchiffon;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em;
+}
+
+.flex-container {
+    background-color:#8dbefc;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 1em;
+}
+
+figcaption {
+    text-align: center;
+    display: table-caption;
+    width: 150%;
+    caption-side: bottom;
+    border-style: double;
+    padding: 10px;
+}
+
+/*styling the images in the flex-container*/
+.flex-container img {
+    height: 200px;
+    padding:10px;
+    margin:20px;
+    background-color: transparent;
+}
+
+figure img:hover {
+    transform: scale(1.2);
+    fill: firebrick;
+}

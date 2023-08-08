@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Quiz"/>
+    <title>Quiz!</title>
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a> </li>
+                <li><a href="atHome.html"> Sustainability at home</a> </li>
+                <li><a href="sustainabilityUN.html">UN sustainability goals</a> </li>
+                <li><a href="quiz.html" id="active">Quiz</a> </li>
+                <li><a href="game.html">Game</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Sustainability Quiz!</h1>
+    <p>This quiz will test how much you know about sustainability.</p>
+    <div id="quiz">
+        <h2>The Quiz</h2>
+        <form name="Quiz">
+            <label for="name">Enter your name</label>
+            <input id="name" type="text" name="name">
+            <br><br>
+            <div class="question">
+            <p>When does the UK governement plan to reach Net Zero by? (Net Zero aims to balance the release and return of carbon dioxide in the atmosphere)</p>
+                <input id="2030" type="radio" name="twentyFifty" value="2030">
+                <label for="2030">2030</label>
+                <br>
+                <input id="2050" type="radio" name="twentyFifty" value="2050">
+                <label for="2050">2050</label>
+                <br>
+                <input id="2075" type="radio" name="twentyFifty" value="2075">
+                <label for="2075">2075</label>
+                <br>
+                <input id="2040" type="radio" name="twentyFifty" value="2040">
+                <label for="2040">2040</label>
+            </div>
+            <br>
+            <div class="question">
+            <p>In the future, the government will ban the use of new petrol adn diesel cars </p>
+                <input id="theBeatles" type="radio" name="stockport" value="theBeatles">
+                <label for="theBeatles">The Beatles</label>
+                <br>
+                <input id="arcticMonkeys2" type="radio" name="stockport" value="arcticMonkeys2">
+                <label for="arcticMonkeys2">Arctic Monkeys</label>
+                <br>
+                <input id="blossoms" type="radio" name="stockport" value="blossoms">
+                <label for="blossoms">Blossoms</label>
+                <br>
+                <input id="theRollingStones" type="radio" name="stockport" value="theRollingStones">
+                <label for="theRollingStones">The Rolling Stones</label>
+            </div>
+            <br>
+            <div class="question">
+                <!--js incomplete-->
+                <p>Which of these songs are by Pink Floyd?</p>
+                    <input id="theGreat" type="checkbox" name="pinkFloyd" value="theGreat">
+                    <label for="theGreat">The Great Gig in the Sky</label>
+                    <br>
+                    <input id="stairway" type="checkbox" name="pinkFloyd" value="stairway">
+                    <label for="stairway">Stairway to Heaven</label>
+                    <br>
+                    <input id="anotherBrick" type="checkbox" name="pinkFloyd" value="anotherBrick">
+                    <label for="anotherBrick">Another Brick in the Wall</label>
+                    <br>
+                    <input id="karma" type="checkbox" name="pinkFloyd" value="karma">
+                    <label for="karma">Karma Police</label>
+                </div>
+            </form>
+    </div>
+    <br>
+    <button type="button" onclick="checkAnswers()">Submit</button>
+    <!--Need to figure out how to have questions with more than one answer-->
+    <footer>
+        <p>Copyright Kothar Aljanabi 2023</p>
+    </footer>
+</body>
+</html>
