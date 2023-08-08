@@ -5,33 +5,55 @@ body {
 }
 
 .flex-container {
-    background-color:#8dbefc;
+    margin: -1em;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 0em;
+    background-color:transparent;
     align-content: space-between;
-    justify-content: space-evenly;
     flex-direction: row;
-    padding: 1em;
 }
 
-figcaption {
-    text-align: center;
-    display: table-caption;
-    width: 150%;
-    caption-side: bottom;
-    border-style: double;
-    padding: 10px;
-}
-
-/*styling the images in the flex-container*/
-.flex-container img {
+.container {
+    flex-basis: 100px;
+    display: flex;
+    position: relative;
     height: 200px;
-    padding:10px;
-    margin:20px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
     background-color: transparent;
 }
 
-figure img:hover {
-    transform: scale(1.2);
-    fill: firebrick;
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    flex-shrink: 0;
+}
+
+.overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2b4a2f;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    flex-wrap: wrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
